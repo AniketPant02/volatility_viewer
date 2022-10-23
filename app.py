@@ -7,7 +7,6 @@ import plotly.express as px
 from components.content_meta import content_meta_populate
 
 app = dash.Dash(external_stylesheets=[dbc.themes.LUX], suppress_callback_exceptions=True)
-app.title = "Volatility Viewer"
 html.Link(href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap", rel="stylesheet")
 
 last_back = 0
