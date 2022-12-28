@@ -1,13 +1,12 @@
 version: '3'
+
 services:
   volatility-viewer-ui:
-    build:
-      context: ./vol-client
-      dockerfile: Dockerfile
+    build: ./vol-client
     ports:
       - "3000:3000"
     container_name: volatility-viewer-ui
     stdin_open: true
     volumes:
-       - ./vol-client:/usr/src/app/vol-client
-       - /usr/src/app/vol-client/node_modules
+       - ./vol-client:/usr/src/app/
+       - /usr/src/app/node_modules
